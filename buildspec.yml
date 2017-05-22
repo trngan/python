@@ -1,8 +1,6 @@
 version: 0.2
 
 phases:
-  installl:
-    - aws cloudformation package --template-file samTemplate.yaml --s3-bucket lablocat --output-template-file NewSamTemplate.yaml
   build:
     commands:
       - echo Build started on `date`
@@ -11,6 +9,6 @@ phases:
     commands:
       - echo Build completed on `date`
 artifacts:
-  type: zip
+  type: S3
   files:
     - HelloWorld.zip
