@@ -8,6 +8,7 @@ Resources:
       Handler: lambda_function.lambda_handler
       Runtime: python2.7
       CodeUri: .
+      FunctionName: github
       Description: ''
       MemorySize: 128
       Timeout: 3
