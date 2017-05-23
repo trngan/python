@@ -6,5 +6,6 @@ phases:
       - apt-get update -y
       - apt-get install zip -y
       - ls -la
+      - cat /etc/*-release
       - zip start.zip start.py
       - aws lambda update-function-code --function-name start --zip-file fileb://start.zip --publish
