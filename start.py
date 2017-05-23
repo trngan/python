@@ -1,4 +1,4 @@
-#lambda V3
+#lambda V6
 import boto3
 
 # Enter the region your instances are in, e.g. 'us-east-1'
