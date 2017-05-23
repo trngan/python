@@ -6,6 +6,5 @@ phases:
       - apt-get update -y
       - apt-get install zip -y
       - ls -la
-      - uname -a
-      - zip start.zip start.py
-      - aws lambda update-function-code --function-name start --zip-file fileb://start.zip --publish
+      - zip -r numpy.zip .
+      - aws lambda update-function-code --function-name numpy_example --zip-file fileb://numpy.zip --publish
