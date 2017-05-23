@@ -3,7 +3,6 @@ version: 0.2
 phases:
   install:
     commands:
-      - apt-get update -y
       - apt-get install zip -y
-      - zip -R python.zip .
+      - zip -r python.zip .
       - aws lambda update-function-code --function-name github --zip-file python.zip --publish
