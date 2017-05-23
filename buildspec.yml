@@ -6,5 +6,5 @@ phases:
       - apt-get update -y
       - apt-get install zip -y
       - ls -la
-      - zip github.zip Helloword.py
+      - zip github.zip github.py
       - aws lambda update-function-code --function-name github --zip-file fileb://github.zip --publish
