@@ -2191,8 +2191,8 @@ def is_bootstrapping():
         builtins.__NUMPY_SETUP__
         return True
     except AttributeError:
-        return False
         __NUMPY_SETUP__ = False
+        return False
 
 
 #########################
